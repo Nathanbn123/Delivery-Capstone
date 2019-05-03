@@ -1,6 +1,6 @@
-# _The Booch Room(Kombucha Bar)!_
+# _Daily Delivery_
 
-#### _A website where you can critique my css, js and React skills!, 4/19/19_
+#### _Capstone Project for Epicodus_
 
 #### By _**Nathan Nielson**_
 
@@ -8,33 +8,33 @@
 
 _This application provides the user with the opportunity to critique my React skills!_
 
-_I found this project to be much more simple and enjoyable using React compared to Angular, though I am not currently able to integrate the same functionality as I did using Angular, I found React to be far more effective and intuitive._
+
 
 
 ## Project Description Proposal
-  _Daily Delivery App
+  _Daily Delivery App_
 
 An application designed to give delivery drivers a fast, safe and reliable gps/map detailing all of their current delivery addresses.
 
 MVP:
 Application will take in a list of stops/addresses, in the form of a JSON object, and return a map with each stop marked individually, the optimal route to follow and an estimated time.
 
-Tools:
-* -React
-* _Sass
-* -Google maps API
-* -Geocoding API
-* -Firebase
+_Tools:_
+* -React_
+* _Sass_
+* -Google maps API_
+* -Geocoding API_
+* -Firebase_
 
-Stretch-Goals:
-* -Mobile friendly design in React Native
-* -live updates including accidents and traffic data
-* -User authentication
+_Stretch-Goals:_
+* -Mobile friendly design in React Native_
+* -live updates including accidents and traffic data_
+* -User authentication_
 
-Additional Tools:
-* -React Native
-* -Waze Deep Links
-* -Firebase authentication
+_Additional Tools:_
+* -React Native_
+* -Waze Deep Links_
+* -Firebase authentication_
 
 ## _Friday Work log_
 * _Create Application using create-react-app_
