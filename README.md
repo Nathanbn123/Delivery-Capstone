@@ -1,68 +1,90 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# _The Booch Room(Kombucha Bar)!_
 
-## Available Scripts
+#### _A website where you can critique my css, js and React skills!, 4/19/19_
 
-In the project directory, you can run:
+#### By _**Nathan Nielson**_
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+_This application provides the user with the opportunity to critique my React skills!_
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+_I found this project to be much more simple and enjoyable using React compared to Angular, though I am not currently able to integrate the same functionality as I did using Angular, I found React to be far more effective and intuitive._
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Description Proposal
+  _Daily Delivery App
 
-### `npm run build`
+An application designed to give delivery drivers a fast, safe and reliable gps/map detailing all of their current delivery addresses.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+MVP:
+Application will take in a list of stops/addresses, in the form of a JSON object, and return a map with each stop marked individually, the optimal route to follow and an estimated time.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Tools:
+* -React
+* _Sass
+* -Google maps API
+* -Geocoding API
+* -Firebase
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Stretch-Goals:
+* -Mobile friendly design in React Native
+* -live updates including accidents and traffic data
+* -User authentication
 
-### `npm run eject`
+Adittional Tools:
+* -React Native
+* -Waze Deep Links
+* -Firebase authentication
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+_
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Notes
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Specs
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Features
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+## Setup/Installation Requirements
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+* _Use your command terminal (gitbash if you're using a windows machine) to clone the latest commit from Github, using the url provided_
+* _Once the download is complete, use your terminal to 'cd' into the project folder_
+* _Once inside, run 'npm install' in your terminal to install necessary plugins_
+* _When the install is complete, enter 'npm run start' in your terminal to open the site in your browser!_
+* _To view the code, press 'CTRL + C' to stop the auto update, run "atom ." in your terminal then navigate to the 'src' folder and open whatever you wish to view!_
 
-### Making a Progressive Web App
+## Known Bugs
+_There are currently no known bugs, please feel free to email me if you find any!_
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Support and contact details
+_If you encounter any bugs or issues not documented during your experience, please feel free to contact me at my email: nathans-email@email.com_
 
-### Advanced Configuration
+## Technologies used
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+_This application was created using HTML, CSS, Bootstrap, Javascript and Angular_
 
-### Deployment
+### License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Copyright (c) 2019 **_Nathan Nielson, Epicodus_**
 
-### `npm run build` fails to minify
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
