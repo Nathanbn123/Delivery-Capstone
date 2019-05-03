@@ -40,7 +40,8 @@ Additional Tools:
 * _Create Application using create-react-app_
 * _Reformat readme_
 * _Research Google Maps API_
-*_Continue Google Maps API research_
+* _Continue Google Maps API research_
+* _Checkout Geocoding API as well as continue Google Maps API research_
 
 ## Notes
 
