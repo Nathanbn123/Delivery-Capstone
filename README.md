@@ -31,18 +31,19 @@ Stretch-Goals:
 * -live updates including accidents and traffic data
 * -User authentication
 
-Adittional Tools:
+Additional Tools:
 * -React Native
 * -Waze Deep Links
 * -Firebase authentication
 
-_
+## Friday Work log
+* _Create Application using create-react-app_
+* _Reformat readme_
+* _Research Google Maps API_
 
 ## Notes
 
 ## Specs
-
-
 
 
 
