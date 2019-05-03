@@ -14,27 +14,27 @@ _This application provides the user with the opportunity to critique my React sk
 ## Project Description Proposal
   _Daily Delivery App_
 
-An application designed to give delivery drivers a fast, safe and reliable gps/map detailing all of their current delivery addresses.
+_An application designed to give delivery drivers a fast, safe and reliable gps/map detailing all of their current delivery addresses._
 
-MVP:
-Application will take in a list of stops/addresses, in the form of a JSON object, and return a map with each stop marked individually, the optimal route to follow and an estimated time.
+_MVP:_
+_Application will take in a list of stops/addresses, in the form of a JSON object, and return a map with each stop marked individually, the optimal route to follow and an estimated time._
 
 _Tools:_
-* -React_
+* _React_
 * _Sass_
-* -Google maps API_
-* -Geocoding API_
-* -Firebase_
+* _Google maps API_
+* _Geocoding API_
+* _Firebase_
 
 _Stretch-Goals:_
-* -Mobile friendly design in React Native_
-* -live updates including accidents and traffic data_
-* -User authentication_
+* _Mobile friendly design in React Native_
+* _live updates including accidents and traffic data_
+* _User authentication_
 
 _Additional Tools:_
-* -React Native_
-* -Waze Deep Links_
-* -Firebase authentication_
+* _React Native_
+* _Waze Deep Links_
+* _Firebase authentication_
 
 ## _Friday Work log_
 * _Create Application using create-react-app_
