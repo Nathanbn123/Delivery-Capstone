@@ -36,10 +36,11 @@ Additional Tools:
 * -Waze Deep Links
 * -Firebase authentication
 
-## Friday Work log
+## _Friday Work log_
 * _Create Application using create-react-app_
 * _Reformat readme_
 * _Research Google Maps API_
+*_Continue Google Maps API research_
 
 ## Notes
 
