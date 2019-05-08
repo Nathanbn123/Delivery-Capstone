@@ -1,6 +1,6 @@
 import React from 'react';
 import Landing from './Landing';
-
+import SimpleMap from './SimpleMap'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
     <div>
 
       <Landing/>
-
+        <SimpleMap/>
 
     </div>
   );

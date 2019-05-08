@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
 
 
-
 class SimpleMap extends React.Component {
 
   ComponentDidMount() {
     this.renderMap;
-
   }
+
   renderMap() {
     loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyAsLAIBIJ_9YXNgv8mhHSws4tMT7c10gU4&callback=initMap');
     window.initMap = this.initMap;
   }
-
-
 
   initMap() {
     map = new window.google.maps.Map(document.getElementById('map'), {
@@ -24,10 +21,15 @@ class SimpleMap extends React.Component {
 
   render() {
     return (
-      <main>
+      <div>
         <div id="map"></div>
-
-      </main>
+        <p>henlo</p>
+        <style jsx> {`
+            #map {
+              height: 100vh;
+            }
+      `}</style>
+      </div>
 
     );
   }

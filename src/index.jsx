@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 import { HashRouter } from 'react-router-dom';
-// import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
+import TestReducer from './TestReducer';
+
 
 
 
@@ -13,7 +15,7 @@ import { Provider } from 'react-redux';
 //   voteReducer
 // });
 //
-// const store = createStore(postListReducer);
+const store = createStore(TestReducer);
 //
 //
 // let subscribe = store.subscribe(()=>
@@ -25,7 +27,7 @@ import { Provider } from 'react-redux';
 const render = (Component) => {
   ReactDOM.render(
     <HashRouter>
-      <Provider>
+      <Provider store={store}>
         <Component/>
       </Provider>
     </HashRouter>,
