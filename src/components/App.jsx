@@ -9,7 +9,10 @@ function App() {
 
   return(
     <div>
-      <p>test test</p>
+
+      <Landing/>
+
+
     </div>
   );
 }

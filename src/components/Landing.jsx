@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SimpleMap from './SimpleMap';
 
 function Landing() {
 
@@ -8,7 +8,7 @@ function Landing() {
 
   return(
     <div>
-      <p>test test</p>
+      <p> LANDING test LANDING test</p>
     </div>
   );
 }
