@@ -1,4 +1,15 @@
-[
+import React, { Component } from 'react';
+import Geocode from "react-geocode";
+
+
+
+function AddressStore() {
+
+Geocode.setApiKey('AIzaSyAsLAIBIJ_9YXNgv8mhHSws4tMT7c10gU4');
+
+Geocode.enableDebug();
+
+let Adds = [
   '777 Brockton Avenue, Abington MA 2351',
   '30 Memorial Drive, Avon MA 2322',
   '250 Hartford Avenue, Bellingham MA 2019',
@@ -234,3 +245,24 @@
   '4538 Us Hwy 231, Wetumpka AL 36092',
   '2575 Us Hwy 43, Winfield AL 35594'
 ];
+
+
+Geocode.fromAddress(Adds[0]).then(
+  response => {
+    const { lat, lng } = response.results[0].geometry.location;
+    console.log(lat, lng);
+  },
+  error => {
+    console.error(error);
+  }
+);
+
+
+return (
+  <p>H10</p>
+
+
+  )
+}
+
+export default AddressStore

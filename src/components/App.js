@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Landing from './Landing';
 // import SimpleMap from './SimpleMap';
+import AddressStore from './AddressStore'
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 
 const mapStyles = {
@@ -40,6 +41,8 @@ export class MapContainer extends Component {
   render() {
     return (
       <div>
+      <Landing />
+      <AddressStore />
         <Map
          google={this.props.google}
          zoom={14}
@@ -49,9 +52,10 @@ export class MapContainer extends Component {
           <Marker
             onClick={this.onMarkerClick}
             name={'Kenyatta International Convention Centre'}
-        
+
             ></Marker>
        </Map>
+
     </div>
      );
    }
