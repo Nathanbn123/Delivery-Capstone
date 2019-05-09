@@ -2,32 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 import { HashRouter } from 'react-router-dom';
-import { createStore, combineReducers } from 'redux';
+
 import { Provider } from 'react-redux';
-import TestReducer from './TestReducer';
 
 
 
-
-//
-// const rootReducer = combineReducers({
-//   postListReducer,
-//   voteReducer
-// });
-//
-const store = createStore(TestReducer);
-//
-//
-// let subscribe = store.subscribe(()=>
-//   console.log(store.getState())
-// );
-//
 
 
 const render = (Component) => {
   ReactDOM.render(
     <HashRouter>
-      <Provider store={store}>
+      <Provider>
         <Component/>
       </Provider>
     </HashRouter>,

@@ -24,7 +24,8 @@ class SimpleMap extends React.Component {
       <div>
         <div id="map"></div>
         <p>henlo</p>
-        <style jsx> {`
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsLAIBIJ_9YXNgv8mhHSws4tMT7c10gU4&callback=initMap"></script>
+        <style> {`
             #map {
               height: 100vh;
             }

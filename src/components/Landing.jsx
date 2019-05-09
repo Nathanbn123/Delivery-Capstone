@@ -1,6 +1,4 @@
 import React from 'react';
-import SimpleMap from './SimpleMap';
-
 function Landing() {
 
   console.log('test');
@@ -9,6 +7,7 @@ function Landing() {
   return(
     <div>
       <p> LANDING test LANDING test</p>
+
     </div>
   );
 }
