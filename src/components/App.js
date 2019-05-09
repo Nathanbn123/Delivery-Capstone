@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Landing from './Landing';
 // import SimpleMap from './SimpleMap';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 
 const mapStyles = {
   width: '100%',
@@ -9,24 +9,54 @@ const mapStyles = {
 };
 
 export class MapContainer extends Component {
+    constructor(props) {
+      super(props)
+      this.state = {
+     showingInfoWindow: false,  //Hides or the shows the infoWindow
+     activeMarker: {},          //Shows the active marker upon click
+     selectedPlace: {}          //Shows the infoWindow to the selected place upon a marker
+    };
+  };
+
+
+  onMarkerClick(props, marker, e) {
+     this.setState({
+       selectedPlace: props,
+       activeMarker: marker,
+       showingInfoWindow: true
+
+     });
+   }
+   onClose(props) {
+     if (this.state.showingInfoWindow) {
+       this.setState({
+         showingInfoWindow: false,
+         activeMarker: null
+       });
+     }
+   };
+
+
   render() {
     return (
       <div>
-        <Landing/>
-        <h1>hoi</h1>
         <Map
-          google={this.props.google}
-          zoom={14}
-          style={mapStyles}
-          initialCenter={{
-            lat: -1.2884,
-            lng: 36.8233
-          }}
-        />
-      </div>
-    );
-  }
-}
+         google={this.props.google}
+         zoom={14}
+         style={mapStyles}
+         initialCenter={{ lat: -1.2884, lng: 36.8233 }}
+         >
+          <Marker
+            onClick={this.onMarkerClick}
+            name={'Kenyatta International Convention Centre'}
+        
+            ></Marker>
+       </Map>
+    </div>
+     );
+   }
+ }
+
 
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyAsLAIBIJ_9YXNgv8mhHSws4tMT7c10gU4'
