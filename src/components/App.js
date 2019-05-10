@@ -3,6 +3,7 @@ import Landing from './Landing';
 // import SimpleMap from './SimpleMap';
 import AddressStore from './AddressStore'
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
+import MapWithADirectionsRenderer from './MapWithADirectionsRenderer'
 
 const mapStyles = {
   width: '100%',
