@@ -45,6 +45,9 @@ _Additional Tools:_
 * _Return from break_
 * _Test API call returns and look for APIs for mock data_
 
+## _Friday Work log #2_
+* _Begin researching route integration_
+
 
 ## Notes
 
