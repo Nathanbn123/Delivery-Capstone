@@ -47,6 +47,10 @@ _Additional Tools:_
 
 ## _Friday Work log #2_
 * _Begin researching route integration_
+* _Continue Research_
+* _Begin integration_
+* _Continue integration_ 
+
 
 
 ## Notes
