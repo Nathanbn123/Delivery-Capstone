@@ -51,6 +51,7 @@ _Additional Tools:_
 * _Begin integration_
 * _Continue integration_
 * _Return from break_
+* _achieve some semblance of functionality _
 
 
 
