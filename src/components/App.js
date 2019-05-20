@@ -4,21 +4,34 @@ import {
   withScriptjs,
   GoogleMap,
   Marker,
-  InfoWindow
+  InfoWindow,
+  DirectionsRenderer,
 } from "react-google-maps";
 
-function Map() {
+class Map extends React.Component {
+    
 
+
+
+
+
+
+
+
+render() {
   return (
 
   <GoogleMap
     defaultZoom={7}
     defaultCenter={{ lat: 45.4211, lng: -75.6903 }}
-
-  >
+   >
+ <Marker
+   position={{ lat: 45.397, lng: -75.8490 }}
+  />
   </GoogleMap>
 
-  )
+    )
+  }
 }
 
 const MapWrapped = withScriptjs(withGoogleMap(Map));
