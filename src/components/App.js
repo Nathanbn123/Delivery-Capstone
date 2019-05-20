@@ -6,6 +6,7 @@ import {
   Marker,
   InfoWindow,
   DirectionsRenderer,
+  TrafficLayer,
 } from "react-google-maps";
 
 class Map extends React.Component {
@@ -58,9 +59,6 @@ componentDidMount() {
   }
 
 
-
-
-
 render() {
   return (
 
@@ -75,6 +73,7 @@ render() {
  <Marker
    position={{ lat: 45.397, lng: -75.8490 }}
   />
+<TrafficLayer autoUpdate />
   </GoogleMap>
 
     )
