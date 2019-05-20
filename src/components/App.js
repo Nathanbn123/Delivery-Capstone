@@ -1,68 +1,38 @@
-import React, { Component } from 'react';
-import Landing from './Landing';
-// import SimpleMap from './SimpleMap';
-import AddressStore from './AddressStore'
-import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
-import MapWithADirectionsRenderer from './MapWithADirectionsRenderer'
+import React from 'react'
+import {
+  withGoogleMap,
+  withScriptjs,
+  GoogleMap,
+  Marker,
+  InfoWindow
+} from "react-google-maps";
 
-const mapStyles = {
-  width: '100%',
-  height: '100%'
-};
+function Map() {
 
-export class MapContainer extends Component {
-    constructor(props) {
-      super(props)
-      this.state = {
-     showingInfoWindow: false,  //Hides or the shows the infoWindow
-     activeMarker: {},          //Shows the active marker upon click
-     selectedPlace: {}          //Shows the infoWindow to the selected place upon a marker
-    };
-  };
+  return (
 
+  <GoogleMap
+    defaultZoom={7}
+    defaultCenter={{ lat: 45.4211, lng: -75.6903 }}
 
-  onMarkerClick(props, marker, e) {
-     this.setState({
-       selectedPlace: props,
-       activeMarker: marker,
-       showingInfoWindow: true
+  >
+  </GoogleMap>
 
-     });
-   }
-   onClose(props) {
-     if (this.state.showingInfoWindow) {
-       this.setState({
-         showingInfoWindow: false,
-         activeMarker: null
-       });
-     }
-   };
+  )
+}
 
-
-  render() {
-    return (
-      <div>
-      <Landing />
-      <AddressStore />
-        <Map
-         google={this.props.google}
-         zoom={14}
-         style={mapStyles}
-         initialCenter={{ lat: 42.0963462, lng: -70.9686115 }}
-         >
-          <Marker
-            onClick={this.onMarkerClick}
-            name={'Kenyatta International Convention Centre'}
-
-            ></Marker>
-       </Map>
-
+const MapWrapped = withScriptjs(withGoogleMap(Map));
+export default function App() {
+  return (
+    <div style={{ width: "100vw", height: "100vh" }}>
+      <MapWrapped
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${
+          process.env.API_KEY
+        }`}
+        loadingElement={<div style={{ height: `100%` }} />}
+        containerElement={<div style={{ height: `100%` }} />}
+        mapElement={<div style={{ height: `100%` }} />}
+      />
     </div>
-     );
-   }
- }
-
-
-export default GoogleApiWrapper({
-  apiKey: process.env.API_KEY
-})(MapContainer);
+  );
+}
