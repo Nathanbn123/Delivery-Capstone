@@ -5,7 +5,7 @@ import Geocode from "react-geocode";
 
 function AddressStore() {
 
-Geocode.setApiKey('AIzaSyAsLAIBIJ_9YXNgv8mhHSws4tMT7c10gU4');
+Geocode.setApiKey(process.env.API_KEY);
 
 Geocode.enableDebug();
 
@@ -246,17 +246,17 @@ let Adds = [
   '2575 Us Hwy 43, Winfield AL 35594'
 ];
 
-
-Geocode.fromAddress(Adds[0]).then(
-  response => {
-    const { lat, lng } = response.results[0].geometry.location;
-    console.log(lat, lng);
-  },
-  error => {
-    console.error(error);
-  }
-);
-
+// 
+// Geocode.fromAddress(Adds[0]).then(
+//   response => {
+//     const { lat, lng } = response.results[0].geometry.location;
+//     console.log(lat, lng);
+//   },
+//   error => {
+//     console.error(error);
+//   }
+// );
+//
 
 return (
   <p>H10</p>

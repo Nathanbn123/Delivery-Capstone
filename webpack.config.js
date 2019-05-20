@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
 
@@ -16,6 +17,9 @@ module.exports = {
     path: resolve(__dirname, 'build'),
     publicPath: '/'
   },
+  node: {
+   fs: "empty"
+},
 
   resolve: {
     extensions: ['.js', '.jsx']
@@ -51,7 +55,9 @@ module.exports = {
             "react",
           ],
           plugins: [
-            "react-hot-loader/babel"
+            "react-hot-loader/babel",
+
+
           ]
         }
       }
@@ -67,5 +73,6 @@ module.exports = {
       title: 'Delivery Capstone',
       filename: resolve(__dirname, "build", "index.html"),
     }),
+    new Dotenv(),
   ]
 };
