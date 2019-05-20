@@ -9,7 +9,13 @@ import {
 } from "react-google-maps";
 
 class Map extends React.Component {
-    
+  constructor(props) {
+   super(props);
+
+  this.state = {
+    directions: null,
+  }
+}
 
 
 
@@ -24,7 +30,11 @@ render() {
   <GoogleMap
     defaultZoom={7}
     defaultCenter={{ lat: 45.4211, lng: -75.6903 }}
-   >
+ >
+
+ <DirectionsRenderer
+   directions={this.state.directions}
+   />
  <Marker
    position={{ lat: 45.397, lng: -75.8490 }}
   />
