@@ -23,9 +23,25 @@ class Map extends React.Component {
   this.state = {
     directions: null,
     places: [
-      {latitude: 25.8103146,longitude: -80.1751609},
-      {latitude: 27.9947147,longitude: -82.5943645},
-      {latitude: 28.4813018,longitude: -81.4387899},
+      // {latitude: 25.8103146,longitude: -80.1751609},
+      // {latitude: 27.9947147,longitude: -82.5943645},
+      // {latitude: 28.4813018,longitude: -81.4387899},
+      { latitude: 37.09024, longitude: -95.712891 },
+      { latitude: 36.9885721, longitude: -96.0262352 },
+      { latitude: 36.9885721, longitude: -96.0262352 },
+      { latitude: 37.09024, longitude: -95.712891 },
+      { latitude: 36.9413193, longitude: -96.06063909999999 },
+      { latitude: 37.09024, longitude: -95.712891 },
+      { latitude: 36.8934142, longitude: -95.8719255 },
+      {  latitude: 36.9413193, longitude: -96.06063909999999 },
+      {  latitude: 36.8934142, longitude: -95.8719255 },
+      {  latitude: 37.09024, longitude: -95.712891 },
+      {  latitude: 37.09024, longitude: -95.712891 },
+      {  latitude: 37.2260548, longitude: -95.74170869999999 },
+      {  latitude: 36.9885721, longitude: -96.0262352 }
+
+
+
     ]
   }
 
@@ -328,7 +344,7 @@ componentDidMount() {
   function displayLocationInfo(position) {
     const lng = position.coords.longitude;
     const lat = position.coords.latitude;
-    console.log(`longitude: ${ lng } | latitude: ${ lat }`);
+    console.log(`longitude: ${ lng }, latitude: ${ lat }`);
   }
 
   const watcher = navigator.geolocation.watchPosition(displayLocationInfo);
@@ -355,9 +371,10 @@ console.log(this.state)
     defaultZoom={7}
     defaultCenter={{ lat: 45.4211, lng: -75.6903 }}
  >
- 
+
 
  <DirectionsRenderer
+   origin={this.state.currentPosition}
    directions={this.state.directions}
    />
 
