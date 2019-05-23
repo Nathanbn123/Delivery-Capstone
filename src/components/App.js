@@ -12,6 +12,7 @@ import AddressStore from './AddressStore'
 
 import Geocode from "react-geocode";
 
+
 class Map extends React.Component {
   constructor(props) {
    super(props);
@@ -26,19 +27,33 @@ class Map extends React.Component {
       // {latitude: 25.8103146,longitude: -80.1751609},
       // {latitude: 27.9947147,longitude: -82.5943645},
       // {latitude: 28.4813018,longitude: -81.4387899},
-      { latitude: 37.09024, longitude: -95.712891 },
-      { latitude: 36.9885721, longitude: -96.0262352 },
-      { latitude: 36.9885721, longitude: -96.0262352 },
-      { latitude: 37.09024, longitude: -95.712891 },
-      { latitude: 36.9413193, longitude: -96.06063909999999 },
-      { latitude: 37.09024, longitude: -95.712891 },
-      { latitude: 36.8934142, longitude: -95.8719255 },
-      {  latitude: 36.9413193, longitude: -96.06063909999999 },
-      {  latitude: 36.8934142, longitude: -95.8719255 },
-      {  latitude: 37.09024, longitude: -95.712891 },
-      {  latitude: 37.09024, longitude: -95.712891 },
-      {  latitude: 37.2260548, longitude: -95.74170869999999 },
-      {  latitude: 36.9885721, longitude: -96.0262352 }
+      { latitude: 41.74078189999999, longitude: -72.7124017 },
+      { latitude: 41.2871201, longitude: -72.6788644 },
+      { latitude: 41.698412, longitude: -72.8972175 },
+      { latitude: 41.4706722, longitude: -73.028352 },
+      { latitude: 41.4072675, longitude: -73.4151643 },
+      { latitude: 41.9233519, longitude: -71.8891874 },
+       { latitude: 41.7406018, longitude: -72.1748199 },
+       { latitude: 41.5833663, longitude: -71.9894052 },
+       { latitude: 41.4072355, longitude: -73.4151643 },
+       { latitude: 41.4078765, longitude: -73.4151643 },
+       { latitude: 41.4072675, longitude: -73.41534543 },
+       { latitude: 41.270424, longitude: -72.9766901 },
+       { latitude: 41.3704689, longitude: -72.155682 },
+       { latitude: 41.5649251, longitude: -73.0055338 },
+       { latitude: 41.4770732, longitude: -72.8112967 },
+       { latitude: 41.8186121, longitude: -73.0779735 },
+       { latitude: 41.2914878, longitude: -73.11301569999999 },
+       { latitude: 41.6805855, longitude: -72.6568121 },
+       { latitude: 41.9233519, longitude: -71.8891874 },
+       { latitude: 41.2987743, longitude: -72.376543 },
+       { latitude: 41.5047984, longitude: -72.1225789 },
+       { latitude: 41.1591183, longitude: -73.4175793 },
+       { latitude: 40.8801966, longitude: -72.9469794 },
+       { latitude: 41.4549974, longitude: -74.3787239 },
+
+
+
 
 
 
@@ -318,7 +333,7 @@ componentDidMount() {
     ];
 
     function convert(input){
-      Geocode.fromAddress(input[0]).then(
+      Geocode.fromAddress(input).then(
         response => {
           let { lat, lng } = response.results[0].geometry.location;
           let coords = { lat, lng };
